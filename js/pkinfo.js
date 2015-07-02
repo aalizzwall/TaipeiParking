@@ -9,14 +9,10 @@
               'User-Agent': 'APPLICATION NAME',
               'Authorization': 'Basic INSERT BASE 64 ENCODED LOGIN CREDENTIALS HERE'
             }  
-            
           }).success(function(data) {
             $scope.parks = data;
-            
           }).error(function(data, status, headers, config) {
             console.log(config);
-            
           });  
-
-    ]);
+    ])
 
