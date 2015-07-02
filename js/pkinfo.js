@@ -14,5 +14,6 @@
           }).error(function(data, status, headers, config) {
             console.log(config);
           });  
+        }
     ])
 
