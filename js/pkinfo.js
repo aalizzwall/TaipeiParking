@@ -7,7 +7,7 @@
               'Content-Type': 'application/json',
               'User-Agent': 'APPLICATION NAME',
               'Authorization': 'Basic INSERT BASE 64 ENCODED LOGIN CREDENTIALS HERE',
-              'Access-Control-Allow-Origin': 'http://run.plnkr.co'
+              'Access-Control-Allow-Origin': '*'
             }  
           }).success(function(data) {
             $scope.parks = data[result][results];
