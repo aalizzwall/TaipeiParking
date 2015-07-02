@@ -9,6 +9,9 @@
             .success(function(result) {
               $scope.parks = result;
             });
+          $http.get('data.json').success (function(data){
+				    $scope.parks = data;
+		      });
 
         }
     ])
