@@ -2,15 +2,9 @@
     .controller('pkctl', ['$scope', '$http',
         function($scope, $http) {
           $scope.parks = [];
-          $http.get('http://data.taipei.gov.tw/opendata/apply/query/QzhBMEJFOTctMEEzRC00M0Q2LThDNDktNDVCNDc3NDNDRDBC?$format=json', {
-            withCredentials: true,
-            headers: {
-              'Content-Type': 'application/json',
-              'User-Agent': 'APPLICATION NAME',
-              'Authorization': 'Basic INSERT BASE 64 ENCODED LOGIN CREDENTIALS HERE'
-            }  
-          }).success(function(data) {
-            $scope.parks = data;
+          $http.get('http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=fe6767ec-9732-4bc9-b051-0990087c708d')
+          .success(function(data) {
+            $scope.parks = data[result][results];
           }).error(function(data, status, headers, config) {
             console.log(config);
           });  
