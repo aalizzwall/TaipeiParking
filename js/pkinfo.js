@@ -7,7 +7,7 @@
 
           $http.get('http://data.taipei.gov.tw/opendata/apply/query/QzhBMEJFOTctMEEzRC00M0Q2LThDNDktNDVCNDc3NDNDRDBC?$format=json')
             .success(function(result) {
-              $scope.parks = result.data;
+              $scope.parks = result;
             });
 
         }
