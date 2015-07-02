@@ -38,25 +38,21 @@
                   <th>汽車</th>
                   <th>機車</th>
                   <th>腳踏車</th>
-                  <th>營業時間</th>
-                  <th>座標</th>
                 </tr>
               </thead>
               <tbody>
                 <tr ng-repeat="park in parks">
-                  <td>{{park['id']}}</td>
-                  <td>{{park['area']}}</td>
-                  <td>{{park['name']}}</td>
-                  <td>{{park['type']}}</td>
-                  <td>{{park['summary']}}</td>
-                  <td>{{park['address']}}</td>
-                  <td>{{park['tel']}}</td>
-                  <td>{{park['payex']}}</td>
-                  <td>{{park['availableCar']}}/{{park['totalCar']}}:{{park['misscount_Car']}}</td>
-                  <td>{{park['available_Motor']}}/{{park['totalMotor']}}</td>
-                  <td>{{park['available_Bike']}}/{{park['totalBike']}}</td>
-                  <td>{{park['serviceTime']}}</td>
-                  <td>{{park['tw97x']}}/{{park['tw97y']}}</td>
+                  <td>{{park['停車場名稱 ']}}</td>
+                  <td>{{park['汽車 車位數']}}</td>
+                  <td>{{park['機車 車位數']}}</td>
+                  <td>{{park['停車場地址 ']}}</td>
+                  <td>{{park['營運時間']}}</td>
+                  <td>{{park['停車費用-平日']}}</td>
+                  <td>{{park['停車費用-假日']}}</td>
+                  <td>{{park['計費基準']}}</td>
+                  <td>{{park['補充說明']}}</td>
+                  <td>{{park['月租']}}</td>
+                  <td>{{park['備註說明']}}</td>
                 </tr>
               </tbody>
             </table>
