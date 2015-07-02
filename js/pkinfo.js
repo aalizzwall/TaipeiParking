@@ -5,8 +5,6 @@
           $http.get('http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=fe6767ec-9732-4bc9-b051-0990087c708d')
           .success(function(data) {
             $scope.parks = data[result][results];
-          }).error(function(data, status, headers, config) {
-            console.log(config);
           });  
         }
     ])
